@@ -5,12 +5,11 @@ import AdminDashboard from "./pages/Admin/AdminDashboard";
 import BorrowerDashboard from "./pages/Borrower/BorrowerDashboard";
 import LenderDashboard from "./pages/Lender/LenderDashboard";
 import AnalystDashboard from "./pages/Analyst/AnalystDashboard";
-import "./index.css"; // ✅ make sure global CSS is imported
+import "./index.css"; // Global CSS
 
 function App() {
   return (
-    // ✅ BrowserRouter must wrap all Routes
-    <BrowserRouter>
+    <BrowserRouter basename="/lloansys">
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/admin" element={<AdminDashboard />} />
